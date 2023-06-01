@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-message Jwt {
-  int32 sequence = 1;
-}

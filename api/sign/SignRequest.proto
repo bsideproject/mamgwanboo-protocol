@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-message SignRequest {
-  string authenticationCode = 1;
-}
