@@ -6,4 +6,5 @@ package protobuf.sign;
 
 message SignResponse {
   string jwt = 1;
+  bool isNewUser = 2;
 }
