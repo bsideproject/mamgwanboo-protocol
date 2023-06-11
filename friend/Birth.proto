@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package protobuf.friend;
+
+message Birth {
+  string isLunar = 1;
+  string date = 2;
+}

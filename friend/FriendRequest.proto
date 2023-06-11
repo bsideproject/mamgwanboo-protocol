@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "Birth.proto";
+
+option java_multiple_files = true;
+
+package protobuf.friend;
+
+message FriendCreateDto {
+  repeated string nicknames = 1;
+  optional string relationship = 2;
+  optional friend.Birth birth = 3;
+  optional string memo = 4;
+}
+
+message FriendUpdateDto {
+  optional string nickname = 1;
+  optional string relationship = 2;
+  optional friend.Birth birth = 3;
+  optional string memo = 4;
+}
+
+
