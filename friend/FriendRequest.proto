@@ -6,6 +6,12 @@ option java_multiple_files = true;
 
 package protobuf.friend;
 
+message FriendSearchCriteria {
+  optional string keyword = 1;
+  optional string sort = 2;
+  optional string relFilter = 3;
+}
+
 message FriendCreateDto {
   repeated string nicknames = 1;
   optional string relationship = 2;
