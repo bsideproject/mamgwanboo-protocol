@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "OauthServiceType.proto";
+import "SexType.proto";
+import "AgeRangeType.proto";
+import "Date.proto";
+
+option java_multiple_files = true;
+
+package protobuf.common;
+
+message UserInformation {
+  string profileNickname = 1;
+  string profileImageLink = 2;
+  common.type.SexType sexType = 3;
+  common.type.AgeRangeType ageRangeType = 4;
+  common.Date birth = 5;
+}
