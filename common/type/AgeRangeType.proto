@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package protobuf.common.type;
+
+enum AgeRangeType {
+    UNDER_TEEN = 0;
+    TEENS = 1;
+    TWENTIES = 2;
+    THIRTIES = 3;
+    FORTIES = 4;
+    FIFTIES = 5;
+    OVER_FIFTY = 6;
+}

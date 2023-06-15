@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "OauthServiceType.proto";
+import "UserInformation.proto";
+
+option java_multiple_files = true;
+
+package protobuf.user;
+
+message UserGetRequest {
+  common.type.OauthServiceType oauthServiceType = 1;
+  string id = 2;
+}
+
+message UserPatchRequest {
+  common.type.OauthServiceType oauthServiceType = 1;
+  string serviceUserId = 2;
+  common.UserInformation userInformation = 3;
+}
