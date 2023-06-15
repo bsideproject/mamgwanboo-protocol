@@ -7,12 +7,8 @@ option java_multiple_files = true;
 
 package protobuf.user;
 
-message UserGetResponse {
-  common.type.OauthServiceType oauthServiceType = 1;
-  common.UserInformation userInformation = 2;
-}
-
-message UserPatchResponse {
-  common.type.OauthServiceType oauthServiceType = 1;
-  common.UserInformation userInformation = 2;
+message UserResponse {
+  string sequence = 1;
+  common.type.OauthServiceType oauthServiceType = 2;
+  common.UserInformation userInformation = 3;
 }
