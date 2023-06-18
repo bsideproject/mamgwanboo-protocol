@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "RelationshipType.proto";
+import "Date.proto";
+import "Item.proto";
+import "RelationshipDto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.relationship;
+
+message RelationshipGetResponse {
+  repeated common.RelationshipDto relationships = 1;
+}
+
+message RelationshipGetDetailResponse {
+  repeated common.RelationshipDto relationships = 1;
+}
+
+message RelationshipPutResponse {
+  repeated string successSequences = 1;
+  repeated string failSequences = 2;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "RelationshipType.proto";
+import "Date.proto";
+import "Item.proto";
+import "RelationshipDto.proto";
+import "SortOrderType.proto";
+
+option java_multiple_files = true;
+
+package protobuf.relationship;
+
+message RelationshipGetRequest {
+  string friendSequence = 1;
+  common.type.SortOrderType sort = 2;
+}
+
+message RelationshipPutRequest {
+  repeated common.RelationshipDto relationships = 1;
+}

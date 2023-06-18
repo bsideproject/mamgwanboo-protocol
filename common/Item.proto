@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package protobuf.common;
+
+message Item {
+  string name = 1;
+  string imageLink = 2;
+  int32 price = 3;
+}
