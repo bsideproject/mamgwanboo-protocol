@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "RelationshipType.proto";
 import "Date.proto";
-import "Item.proto";
+import "ItemDto.proto";
 import "RelationshipDto.proto";
 
 option java_multiple_files = true;
@@ -10,14 +10,22 @@ option java_multiple_files = true;
 package protobuf.relationship;
 
 message RelationshipGetResponse {
-  repeated common.RelationshipDto relationships = 1;
+  repeated common.RelationshipResponseDto relationships = 1;
 }
 
 message RelationshipGetDetailResponse {
-  repeated common.RelationshipDto relationships = 1;
+  repeated common.RelationshipRequestDto relationships = 1;
+}
+
+message RelationshipPostResponse {
+  repeated common.RelationshipRequestDto relationships = 1;
 }
 
 message RelationshipPutResponse {
-  repeated string successSequences = 1;
-  repeated string failSequences = 2;
+  string sequence = 1;
+  common.type.RelationshipType type = 3;
+  string event = 4;
+  common.Date date = 5;
+  common.ItemDto item = 6;
+  string memo = 7;
 }

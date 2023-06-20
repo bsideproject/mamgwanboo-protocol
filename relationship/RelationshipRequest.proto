@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "RelationshipType.proto";
 import "Date.proto";
-import "Item.proto";
+import "ItemDto.proto";
 import "RelationshipDto.proto";
 import "SortOrderType.proto";
 
@@ -15,6 +15,15 @@ message RelationshipGetRequest {
   common.type.SortOrderType sort = 2;
 }
 
+message RelationshipPostRequest {
+  repeated common.RelationshipRequestDto relationships = 1;
+}
+
 message RelationshipPutRequest {
-  repeated common.RelationshipDto relationships = 1;
+  string sequence = 1;
+  common.type.RelationshipType type = 3;
+  string event = 4;
+  common.Date date = 5;
+  common.ItemDto item = 6;
+  string memo = 7;
 }
