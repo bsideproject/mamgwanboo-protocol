@@ -4,7 +4,7 @@ option java_multiple_files = true;
 
 package protobuf.common;
 
-message Date {
+message DateProto {
   int32 year = 1;
   int32 month = 2;
   int32 day = 3;

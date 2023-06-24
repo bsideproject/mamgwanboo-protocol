@@ -4,6 +4,6 @@ option java_multiple_files = true;
 
 package protobuf.sign;
 
-message JwtPayload {
+message SignRequestProto {
   string sequence = 1;
 }

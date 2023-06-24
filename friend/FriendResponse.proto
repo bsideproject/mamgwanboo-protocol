@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "Birth.proto";
-import "LevelInformation.proto";
+import "LevelInformationProto.proto";
 
 option java_multiple_files = true;
 
@@ -13,5 +13,5 @@ message FriendDto {
   string relationship = 3;
   optional friend.Birth birth = 4;
   optional string memo = 5;
-  optional common.LevelInformation levelInformation = 6;
+  optional common.LevelInformationProto levelInformation = 6;
 }

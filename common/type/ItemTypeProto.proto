@@ -4,7 +4,7 @@ option java_multiple_files = true;
 
 package protobuf.common.type;
 
-enum OauthServiceType {
-  KAKAO = 0;
-  APPLE = 1;
+enum ItemTypeProto {
+  CASH = 0;
+  PRESENT = 1;
 }

@@ -4,7 +4,7 @@ option java_multiple_files = true;
 
 package protobuf.common.type;
 
-enum ItemType {
-  CASH = 0;
-  PRESENT = 1;
+enum SexTypeProto {
+  MALE = 0;
+  FEMALE = 1;
 }

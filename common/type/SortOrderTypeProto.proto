@@ -4,7 +4,7 @@ option java_multiple_files = true;
 
 package protobuf.common.type;
 
-enum SexType {
-  MALE = 0;
-  FEMALE = 1;
+enum SortOrderTypeProto {
+  DESC = 0;
+  ASC = 1;
 }

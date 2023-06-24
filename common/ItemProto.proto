@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-import "ItemType.proto";
+import "ItemTypeProto.proto";
 
 option java_multiple_files = true;
 
 package protobuf.common;
 
-message ItemDto {
-  common.type.ItemType type = 1;
+message ItemProto {
+  common.type.ItemTypeProto type = 1;
   string name = 2;
   string imageLink = 3;
 }

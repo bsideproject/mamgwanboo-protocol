@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "OauthServiceTypeProto.proto";
+import "UserInformationProto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.user;
+
+message UserResponseProto {
+  string sequence = 1;
+  common.type.OauthServiceTypeProto oauthServiceType = 2;
+  common.UserInformationProto userInformation = 3;
+}

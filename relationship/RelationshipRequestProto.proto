@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "RelationshipTypeProto.proto";
+import "DateProto.proto";
+import "ItemProto.proto";
+import "RelationshipProto.proto";
+import "SortOrderTypeProto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.relationship;
+
+message RelationshipGetRequestProto {
+  string friendSequence = 1;
+  common.type.SortOrderTypeProto sort = 2;
+}
+
+message RelationshipPostRequestProto {
+  repeated common.RelationshipRequestProto relationships = 1;
+}
+
+message RelationshipPutRequestProto {
+  string sequence = 1;
+  common.type.RelationshipTypeProto type = 3;
+  string event = 4;
+  common.DateProto date = 5;
+  common.ItemProto item = 6;
+  string memo = 7;
+}
