@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-import "Birth.proto";
+import "BirthProto.proto";
 import "LevelInformationProto.proto";
 
 option java_multiple_files = true;
 
 package protobuf.friend;
 
-message FriendDto {
+message FriendResponseProto {
   optional string sequence = 1;
   optional string nickname = 2;
   string relationship = 3;
-  optional friend.Birth birth = 4;
+  optional common.BirthProto birth = 4;
   optional string memo = 5;
   optional common.LevelInformationProto levelInformation = 6;
 }
