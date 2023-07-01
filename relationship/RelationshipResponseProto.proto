@@ -9,6 +9,12 @@ option java_multiple_files = true;
 
 package protobuf.relationship;
 
+message RelationshipCountResponseProto {
+  int32 total = 1;
+  int32 given = 2;
+  int32 taken = 3;
+}
+
 message RelationshipGetResponseProto {
   repeated common.RelationshipResponseProto relationships = 1;
 }
