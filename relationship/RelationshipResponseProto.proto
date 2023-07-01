@@ -9,11 +9,11 @@ option java_multiple_files = true;
 
 package protobuf.relationship;
 
-message RelationshipGetResponse {
+message RelationshipGetResponseProto {
   repeated common.RelationshipResponseProto relationships = 1;
 }
 
-message RelationshipGetDetailResponse {
+message RelationshipGetDetailResponseProto {
   string sequence = 1;
   string friendSequence = 3;
   common.type.RelationshipTypeProto type = 4;
