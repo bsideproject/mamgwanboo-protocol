@@ -12,3 +12,8 @@ message RelationLevelProto {
   int32 countFrom = 5;
   int32 countTo = 6;
 }
+
+message RelationLevelGetCriteriaProto {
+  optional string searchKey = 1;
+  optional string searchValue = 2;
+}
