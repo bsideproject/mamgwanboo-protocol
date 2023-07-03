@@ -1,10 +1,13 @@
 syntax = "proto3";
 
+import "DateProto.proto";
+import "YnTypeProto.proto";
+
 option java_multiple_files = true;
 
 package protobuf.common;
 
 message BirthProto {
-  string isLunar = 1;
-  string date = 2;
+  common.type.YnTypeProto isLunar = 1;
+  common.DateProto date = 2;
 }
