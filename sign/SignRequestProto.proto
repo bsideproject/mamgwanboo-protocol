@@ -1,9 +1,12 @@
 syntax = "proto3";
 
+import "OauthServiceTypeProto.proto";
+
 option java_multiple_files = true;
 
 package protobuf.sign;
 
 message SignRequestProto {
-  string sequence = 1;
+  common.type.OauthServiceTypeProto oauthServiceType = 1;
+  string code = 2;
 }
