@@ -7,23 +7,23 @@ option java_multiple_files = true;
 package protobuf.friend;
 
 message FriendGetCriteriaProto {
-  optional string keyword = 1;
-  optional string sort = 2;
-  optional string relFilter = 3;
+  string keyword = 1;
+  string sort = 2;
+  string relFilter = 3;
 }
 
 message FriendPostProto {
   repeated string nicknames = 1;
-  optional string relationship = 2;
-  optional common.BirthProto birth = 3;
-  optional string memo = 4;
+  string relationship = 2;
+  common.BirthProto birth = 3;
+  string memo = 4;
 }
 
 message FriendPutProto {
-  optional string nickname = 1;
-  optional string relationship = 2;
-  optional common.BirthProto birth = 3;
-  optional string memo = 4;
+  string nickname = 1;
+  string relationship = 2;
+  common.BirthProto birth = 3;
+  string memo = 4;
 }
 
 
