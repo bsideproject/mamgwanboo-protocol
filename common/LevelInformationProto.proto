@@ -9,4 +9,6 @@ message LevelInformationProto {
   int32 given = 2;
   int32 taken = 3;
   int32 level = 4;
+  string title = 5;
+  string description = 6;
 }
