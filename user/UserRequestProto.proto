@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "UserInformationProto.proto";
+import "AllowInformationProto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.user;
+
+message UserPatchRequestProto {
+  common.UserInformationProto userInformation = 3;
+  common.AllowInformationProto allowInformation = 4;
+}

@@ -21,14 +21,12 @@ message RelationshipGetResponseProto {
 
 message RelationshipGetDetailResponseProto {
   string sequence = 1;
-  string friendSequence = 3;
-  common.type.RelationshipTypeProto type = 4;
-  string event = 5;
-  common.DateProto date = 6;
-  common.DateProto createDate = 7;
-  common.DateProto modifyDate = 8;
-  common.ItemProto item = 9;
-  string memo = 10;
+  string friendSequence = 2;
+  common.type.RelationshipTypeProto type = 3;
+  string event = 4;
+  common.DateProto date = 5;
+  common.ItemProto item = 6;
+  string memo = 7;
 }
 
 message RelationshipPostResponseProto {
@@ -37,9 +35,9 @@ message RelationshipPostResponseProto {
 
 message RelationshipPutResponseProto {
   string sequence = 1;
-  common.type.RelationshipTypeProto type = 3;
-  string event = 4;
-  common.DateProto date = 5;
-  common.ItemProto item = 6;
-  string memo = 7;
+  common.type.RelationshipTypeProto type = 2;
+  string event = 3;
+  common.DateProto date = 4;
+  common.ItemProto item = 5;
+  string memo = 6;
 }

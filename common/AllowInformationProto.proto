@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "YnTypeProto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.common;
+
+message AllowInformationProto {
+  common.type.YnTypeProto serviceYn = 1;
+  common.type.YnTypeProto privateInformationYn = 2;
+  common.type.YnTypeProto eventMarketingYn = 3;
+}
