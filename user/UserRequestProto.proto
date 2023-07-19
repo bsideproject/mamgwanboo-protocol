@@ -8,6 +8,7 @@ option java_multiple_files = true;
 package protobuf.user;
 
 message UserPatchRequestProto {
-  common.UserInformationProto userInformation = 3;
-  common.AllowInformationProto allowInformation = 4;
+  common.UserInformationProto userInformation = 1;
+  common.AllowInformationProto allowInformation = 2;
+  string reason = 3;
 }
