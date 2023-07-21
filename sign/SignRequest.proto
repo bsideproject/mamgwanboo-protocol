@@ -1,8 +1,14 @@
 syntax = "proto3";
 
+import "UserIdProto.proto";
+
 option java_multiple_files = true;
 
 package protobuf.sign;
+
+message SignRequestProto {
+  common.UserIdProto userId = 1;
+}
 
 message SignWithdrawlRequestProto {
   string withdrawlReason = 1;
