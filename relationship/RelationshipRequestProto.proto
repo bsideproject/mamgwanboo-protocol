@@ -21,9 +21,10 @@ message RelationshipPostRequestProto {
 
 message RelationshipPutRequestProto {
   string sequence = 1;
-  common.type.RelationshipTypeProto type = 2;
-  string event = 3;
-  common.DateProto date = 4;
-  common.ItemProto item = 5;
-  string memo = 6;
+  string friendSequence = 2;
+  common.type.RelationshipTypeProto type = 3;
+  string event = 4;
+  common.DateProto date = 5;
+  common.ItemProto item = 6;
+  string memo = 7;
 }
