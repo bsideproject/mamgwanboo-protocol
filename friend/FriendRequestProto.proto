@@ -9,7 +9,6 @@ package protobuf.friend;
 message FriendGetCriteriaProto {
   string keyword = 1;
   string sort = 2;
-  string relFilter = 3;
 }
 
 message FriendPostProto {
