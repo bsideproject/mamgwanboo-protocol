@@ -1,8 +1,7 @@
 syntax = "proto3";
 
-import "RelationshipTypeProto.proto";
-import "DateProto.proto";
-import "ItemProto.proto";
+import "BirthProto.proto";
+import "LevelInformationProto.proto";
 
 option java_multiple_files = true;
 
@@ -10,43 +9,9 @@ package protobuf.relationship;
 
 message RelationshipResponseProto {
   string sequence = 1;
-  common.type.RelationshipTypeProto type = 2;
-  string event = 3;
-  common.DateProto date = 4;
-  common.ItemProto item = 5;
-  string memo = 6;
-}
-
-message RelationshipCountResponseProto {
-  int32 total = 1;
-  int32 given = 2;
-  int32 taken = 3;
-}
-
-message RelationshipGetResponseProto {
-  repeated RelationshipResponseProto relationships = 1;
-}
-
-message RelationshipGetDetailResponseProto {
-  string sequence = 1;
-  string friendSequence = 2;
-  common.type.RelationshipTypeProto type = 3;
-  string event = 4;
-  common.DateProto date = 5;
-  common.ItemProto item = 6;
-  string memo = 7;
-}
-
-message RelationshipPostResponseProto {
-  repeated RelationshipResponseProto relationships = 1;
-}
-
-message RelationshipPutResponseProto {
-  string sequence = 1;
-  string friendSequence = 2;
-  common.type.RelationshipTypeProto type = 3;
-  string event = 4;
-  common.DateProto date = 5;
-  common.ItemProto item = 6;
-  string memo = 7;
+  string nickname = 2;
+  string relationship = 3;
+  common.BirthProto birth = 4;
+  string memo = 5;
+  common.LevelInformationProto levelInformation = 6;
 }

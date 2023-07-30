@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+import "MindTypeProto.proto";
+import "DateProto.proto";
+import "ItemProto.proto";
+import "SortOrderTypeProto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.mind;
+
+message MindRequestProto {
+  string relationshipSequence = 1;
+  common.type.MindTypeProto type = 2;
+  string event = 3;
+  common.DateProto date = 4;
+  common.ItemProto item = 5;
+  string memo = 6;
+}
+
+message MindGetRequestProto {
+  string relationshipSequence = 1;
+  common.type.SortOrderTypeProto sort = 2;
+}
+
+message MindPostRequestProto {
+  repeated MindRequestProto minds = 1;
+}
+
+message MindPutRequestProto {
+  string sequence = 1;
+  string relationshipSequence = 2;
+  common.type.MindTypeProto type = 3;
+  string event = 4;
+  common.DateProto date = 5;
+  common.ItemProto item = 6;
+  string memo = 7;
+}

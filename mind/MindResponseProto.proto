@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+import "MindTypeProto.proto";
+import "DateProto.proto";
+import "ItemProto.proto";
+
+option java_multiple_files = true;
+
+package protobuf.mind;
+
+message MindResponseProto {
+  string sequence = 1;
+  common.type.MindTypeProto type = 2;
+  string event = 3;
+  common.DateProto date = 4;
+  common.ItemProto item = 5;
+  string memo = 6;
+}
+
+message MindCountResponseProto {
+  int32 total = 1;
+  int32 given = 2;
+  int32 taken = 3;
+}
+
+message MindGetResponseProto {
+  repeated MindResponseProto minds = 1;
+}
+
+message MindGetDetailResponseProto {
+  string sequence = 1;
+  string relationshipSequence = 2;
+  common.type.MindTypeProto type = 3;
+  string event = 4;
+  common.DateProto date = 5;
+  common.ItemProto item = 6;
+  string memo = 7;
+}
+
+message RelationshipPostResponseProto {
+  repeated MindResponseProto relationships = 1;
+}
+
+message MindPutResponseProto {
+  string sequence = 1;
+  string relationshipSequence = 2;
+  common.type.MindTypeProto type = 3;
+  string event = 4;
+  common.DateProto date = 5;
+  common.ItemProto item = 6;
+  string memo = 7;
+}

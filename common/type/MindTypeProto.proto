@@ -4,7 +4,7 @@ option java_multiple_files = true;
 
 package protobuf.common.type;
 
-enum RelationshipTypeProto {
+enum MindTypeProto {
   GIVEN = 0;
   TAKEN = 1;
 }

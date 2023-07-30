@@ -4,16 +4,11 @@ option java_multiple_files = true;
 
 package protobuf.common;
 
-message RelationLevelProto {
+message RelationshipLevelProto {
   optional string sequence = 1;
   string title = 2;
   string description = 3;
   int32 level = 4;
   int32 countFrom = 5;
   int32 countTo = 6;
-}
-
-message RelationLevelGetCriteriaProto {
-  optional string searchKey = 1;
-  optional string searchValue = 2;
 }
