@@ -10,6 +10,6 @@ message SignRequestProto {
   common.UserIdProto userId = 1;
 }
 
-message SignWithdrawlRequestProto {
-  string withdrawlReason = 1;
+message SignWithdrawalRequestProto {
+  string withdrawalReason = 1;
 }
