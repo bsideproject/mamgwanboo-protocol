@@ -9,5 +9,6 @@ package protobuf.common;
 message ItemProto {
   common.type.ItemTypeProto type = 1;
   string name = 2;
-  string imageLink = 3;
+  bytes image = 3;
+  string imageLink = 4;
 }
