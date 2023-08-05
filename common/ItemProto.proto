@@ -10,5 +10,6 @@ message ItemProto {
   common.type.ItemTypeProto type = 1;
   string name = 2;
   bytes image = 3;
-  string imageLink = 4;
+  string imageExtension = 4;
+  string imageLink = 5;
 }
