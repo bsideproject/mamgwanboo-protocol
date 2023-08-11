@@ -8,7 +8,7 @@ package protobuf.relationship;
 
 message RelationshipGetRequestProto {
   string keyword = 1;
-  string sort = 2;
+  SortTypeProto sort = 2;
 }
 
 message RelationshipPostRequestProto {
@@ -23,6 +23,11 @@ message RelationshipPutRequestProto {
   string relationship = 2;
   common.BirthProto birth = 3;
   string memo = 4;
+}
+
+enum SortTypeProto {
+  NICKNAME = 0;
+  LEVE = 1;
 }
 
 
