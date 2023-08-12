@@ -27,7 +27,7 @@ message RelationshipPutRequestProto {
 
 enum SortTypeProto {
   NICKNAME = 0;
-  LEVE = 1;
+  LEVEL = 1;
 }
 
 
