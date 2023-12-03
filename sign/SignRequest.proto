@@ -11,5 +11,5 @@ message SignRequestProto {
 }
 
 message SignWithdrawalRequestProto {
-  string withdrawalReason = 1;
+  repeated string withdrawalReason = 1;
 }
