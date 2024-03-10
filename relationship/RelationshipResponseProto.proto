@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "BirthProto.proto";
 import "LevelInformationProto.proto";
+import "YnTypeProto.proto";
 
 option java_multiple_files = true;
 
@@ -14,4 +15,5 @@ message RelationshipResponseProto {
   common.BirthProto birth = 4;
   string memo = 5;
   common.LevelInformationProto levelInformation = 6;
+  common.type.YnTypeProto favoriteYn = 7;
 }

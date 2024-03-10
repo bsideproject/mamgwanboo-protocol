@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "BirthProto.proto";
+import "YnTypeProto.proto";
 
 option java_multiple_files = true;
 
@@ -23,6 +24,7 @@ message RelationshipPutRequestProto {
   string relationship = 2;
   common.BirthProto birth = 3;
   string memo = 4;
+  common.type.YnTypeProto favoriteYn = 5;
 }
 
 enum SortTypeProto {
